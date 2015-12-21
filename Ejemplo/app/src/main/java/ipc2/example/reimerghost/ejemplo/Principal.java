@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 
@@ -11,6 +12,7 @@ public class Principal extends AppCompatActivity {
 
     Button botonPrueba;
     TextView ejTextView;
+    EditText texto;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,12 +24,13 @@ public class Principal extends AppCompatActivity {
 
         botonPrueba = (Button) findViewById(R.id.ipc2Boton);
         ejTextView = (TextView) findViewById(R.id.Salida);
+        texto = (EditText) findViewById(R.id.mensaje);
 
         botonPrueba.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View arg0) {
-                ejTextView.setText("BOTON PRESIONADO");
+                ejTextView.setText("Hola "+texto.getText()+"!!!");
 
 
 

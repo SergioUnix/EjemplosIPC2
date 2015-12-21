@@ -22,13 +22,13 @@
         android:text="New Button"
         android:id="@+id/ipc2Boton"
         android:layout_marginTop="28dp"
-        android:layout_below="@+id/editText"
+        android:layout_below="@+id/mensaje"
         android:layout_centerHorizontal="true" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/editText"
+        android:id="@+id/mensaje"
         android:layout_below="@+id/textView"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
