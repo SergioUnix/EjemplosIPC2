@@ -1,0 +1,21 @@
+
+                String stNombre = etNombre.getText().toString();
+                String stApellido = etApellido.getText().toString();
+                String respuesta;
+                try {
+                    if (stNombre.isEmpty() || stApellido.isEmpty()) {
+                        respuesta = "ERROR: No puede dejar los Campos Vacios";
+                    } else {
+                        respuesta = new wsClientAutor().execute(stNombre, stApellido).get();
+                    }
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                    respuesta = e.getMessage();
+                } catch (ExecutionException e) {
+                    e.printStackTrace();
+                    respuesta = e.getMessage();
+                }
+                salida.setText(respuesta);
+
+
+            }
