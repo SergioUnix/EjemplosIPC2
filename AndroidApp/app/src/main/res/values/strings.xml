@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AppEjemplo</string>
+    <string name="Titulo">Ejemplo de Web Service</string>
+    <string name="EstadoCuenta">Consultar Estado\\n de Cuenta</string>
+</resources>
